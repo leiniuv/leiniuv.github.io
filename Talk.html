@@ -1,4 +1,169 @@
-        <div class="main-content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talks - Lei Niu</title>
+    <style>
+        /* 全局样式 (与主页保持一致) */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex; 
+            gap: 40px; 
+            border-radius: 8px;
+        }
+
+        /* 左侧边栏样式 */
+        .sidebar {
+            flex: 1; 
+            min-width: 250px;
+            text-align: left;
+            border-right: 1px solid #eee;
+            padding-right: 20px;
+        }
+        
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        .sidebar h2 {
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 15px 0;
+            font-weight: normal;
+        }
+        .sidebar p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .nav-links {
+            margin-top: 30px;
+            line-height: 2;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 右侧正文区样式 */
+        .content {
+            flex: 2.5; 
+        }
+        
+        .content h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        /* 年份标题：居中、放大 */
+        .content h4 {
+            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            background-color: #f1f1f1; 
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        /* Talk列表样式：添加项目符号 */
+        .pub-list {
+            list-style-type: disc; 
+            padding-left: 25px; 
+            margin-bottom: 30px;
+        }
+
+        .pub-list li {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .pub-venue {
+            color: #555;
+            font-size: 15px;
+            margin-top: 3px;
+        }
+
+        /* 手机端适配 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-right: 0;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 左侧导航栏 -->
+        <div class="sidebar">
+            <img src="Foto.jpg" alt="Profile Photo">
+            
+            <h1>Lei Niu</h1>
+            <h2>Postdoctoral Fellow</h2>
+            <p>Lingnan University, Hong Kong Catastrophic Risk Centre (HKCRC)</p>
+            <p>📍 China, Hongkong</p>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mailto:leiniu@ln.edu.hk">leiniu@ln.edu.hk</a>
+                <a href="research.html">Research</a>
+                <a href="talks.html">Talks</a>
+                <a href="#">CV (PDF)</a>
+            </div>
+        </div>
+
+        <!-- 右侧主要内容区 -->
+        <div class="content">
+            
             <h3>Talks & Presentations</h3>
 
             <h4>2026</h4>
@@ -90,4 +255,16 @@
                 <li>
                     <div class="pub-title">Commentary on Ram Neta: “Rationally Determinable Conditions”</div>
                     <div class="pub-venue">Epistemology Research Colloquium, University of Cologne, Germany, 24.04.2023.</div>
-                </
+                </li>
+                <li>
+                    <div class="pub-title">“Two Challenges of Epistemic Paternalism”</div>
+                    <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 04.01.2023.</div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
