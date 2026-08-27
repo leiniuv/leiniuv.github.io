@@ -104,21 +104,157 @@
 </head>
 <body>
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei Niu - Personal Website</title>
+    <style>
+        /* 全局字体和背景 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 页面最大宽度和左右分栏容器 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex; /* 开启弹性布局，实现左右分栏 */
+            gap: 40px; /* 左右两栏的间距 */
+        }
+
+        /* 左侧边栏样式 */
+        .sidebar {
+            flex: 1; /* 占据约 1 份宽度 */
+            min-width: 250px;
+            text-align: left;
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+        }
+        
+        /* 头像样式 */
+        .sidebar img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* 侧边栏标题和文字 */
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+        }
+        .sidebar h2 {
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 15px 0;
+            font-weight: normal;
+        }
+        .sidebar p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        /* 侧边栏导航链接样式 */
+        .sidebar a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            margin-top: 30px;
+            line-height: 2;
+        }
+
+        /* 右侧正文区样式 */
+        .content {
+            flex: 2.5; /* 占据约 2.5 份宽度 */
+        }
+        
+        .content h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* 手机端适配：屏幕变窄时改为上下排列 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                padding-right: 0;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
     <div class="container">
-        <!-- 左侧个人信息 -->
+        
+        <!-- ================= 左侧导航栏开始 ================= -->
         <div class="sidebar">
-            <img src="Foto.jpg" alt="Profile Photo" width="100" style="border-radius: 50%;">
-            <h1> Lei Niu </h1>
-            <h2> Postdoctoral Fellow </h2>
-            <p> Lingnan University, Hong Kong Catastrophic Risk Centre (HKCRC)</p>
-            <p>📍 China, Hongkong </p>
+            <!-- 确保你的 GitHub 仓库里有一张名为 Foto.jpg 的图片，大小写必须一致 -->
+            <img src="Foto.jpg" alt="Profile Photo" width="120">
+            
+            <h1>Lei Niu</h1>
+            <h2>Postdoctoral Fellow</h2>
+            <p>Lingnan University, Hong Kong Catastrophic Risk Centre (HKCRC)</p>
+            <p>📍 China, Hongkong</p>
+
+            <!-- 导航链接菜单 -->
+            <div class="nav-links">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="mailto:leiniu@ln.edu.hk">leiniu@ln.edu.hk</a></p>
+                <!-- 注意：跳转的文件名全改成了小写，你在 GitHub 新建页面时也要用小写 -->
+                <p><a href="research.html">Research</a></p>
+                <p><a href="talks.html">Talks</a></p>
+                <p><a href="#">CV (PDF)</a></p>
+            </div>
+        </div>
+        <!-- ================= 左侧导航栏结束 ================= -->
+
+
+        <!-- ================= 右侧内容区开始 ================= -->
+        <div class="content">
+            
+            <h2>About Me</h2>
+            <p>Welcome to my personal website! I am a Postdoctoral Fellow at Lingnan University, Hong Kong Catastrophic Risk Centre (HKCRC). </p>
+            <p>（你可以在这里继续填写你的个人简介...）</p>
 
             <br>
-            <p><a href="index.html">返回主页 (Home)</a></p>
-            <p><a href="mailto:your.email@example.com">leiniu@ln.edu.hk</a></p>
-            <p><a href="Research.html">Research </a></p>
-            <p><a href="Talks.html">Talks </a></p>
-            <p><a href="#">下载 CV (PDF)</a></p>
+
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Research direction 1...</li>
+                <li>Research direction 2...</li>
+                <li>Research direction 3...</li>
+            </ul>
+
+        </div>
+        <!-- ================= 右侧内容区结束 ================= -->
+
+    </div>
+
+</body>
+</html>
+
         </div>
 
         <!-- 右侧详细内容 -->
