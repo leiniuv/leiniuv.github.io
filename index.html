@@ -17,11 +17,11 @@
             background-color: #fcfcfc;
             margin: 0;
             padding: 0;
-            font-size: 16px; /* 将基础字体调回标准大小 16px */
+            font-size: 16px;
         }
 
         .container {
-            max-width: 950px; /* 根据字体调回适中宽度 */
+            max-width: 950px; 
             margin: 40px auto;
             display: flex;
             flex-wrap: wrap;
@@ -33,7 +33,7 @@
 
         /* 左侧边栏 */
         .sidebar {
-            flex: 1 1 280px; 
+            flex: 1 1 240px; /* 缩减侧边栏基础宽度，原为 280px */
             background-color: #2c3e50;
             color: #ecf0f1;
             padding: 40px 20px;
@@ -48,19 +48,19 @@
         }
 
         .sidebar h1 {
-            font-size: 32px; /* 调整名字大小 */
+            font-size: 28px; /* 进一步调小名字 */
             margin: 0 0 10px;
         }
 
         .sidebar h2 {
-            font-size: 20px; /* 调整头衔大小 */
+            font-size: 18px; /* 进一步调小头衔 */
             font-weight: 300;
             margin: 0 0 20px;
             color: #bdc3c7;
         }
 
         .sidebar p {
-            font-size: 16px; /* 调整侧边栏文本大小 */
+            font-size: 15px; /* 进一步调小侧边栏普通文本 */
             margin: 12px 0;
             line-height: 1.5;
         }
@@ -84,7 +84,7 @@
         .navigation a {
             display: block;
             margin: 16px 0;
-            font-size: 18px; /* 调整导航链接大小 */
+            font-size: 16px; /* 进一步调小导航链接 */
             font-weight: bold;
         }
 
@@ -103,12 +103,12 @@
             border-bottom: 2px solid #ecf0f1;
             padding-bottom: 8px;
             margin-top: 0;
-            font-size: 26px; /* 调整板块标题大小 */
+            font-size: 26px; 
         }
 
         .main-content p {
             text-align: justify;
-            font-size: 16px; /* 调整正文文本大小 */
+            font-size: 16px; 
             line-height: 1.8;
         }
 
@@ -118,7 +118,7 @@
 
         .main-content li {
             margin-bottom: 14px;
-            font-size: 16px; /* 调整列表文本大小 */
+            font-size: 16px; 
             line-height: 1.8;
         }
 
@@ -147,18 +147,15 @@
         <!-- 左侧个人信息 -->
         <div class="sidebar">
 
-            <!-- Foto.JPG 应与 index.html 位于同一个文件夹 -->
-            <img src="Foto.JPG" alt="Lei Niu 的照片" class="profile-img" style="width: 200px; height: 200px;">
+            <!-- 配合变窄的侧边栏，将照片大小从 200px 调小至 170px -->
+            <img src="Foto.JPG" alt="Lei Niu 的照片" class="profile-img" style="width: 170px; height: 170px;">
 
             <h1>Lei Niu</h1>
 
             <h2>Postdoctoral Fellow</h2>
 
-            <!-- 修复了此处多余的 </p> 标签，合并为了统一的一段 -->
             <p> 
-                Hong Kong Catastrophic Risk Centre (HKCRC)<br>
-                Department of Philosophy<br>
-                Lingnan University 
+                Philosophy 
             </p>
             <p>📍 China, Hong Kong </p>
 
@@ -182,7 +179,6 @@
 
             <!-- 个人简介 -->
             <div class="section">
-                <h3> About Me </h3>
 
                 <p>
                    I am a Postdoctoral Fellow in the Hong Kong Catastrophic Risk Centre (HKCRC) at Lingnan University. I completed my Dr. Phil. in the Cologne Center for Contemporary Epistemology and the Kantian Tradition (CONCEPT) at the University of Cologne. Before that, I studied philosophy at Humboldt University of Berlin and Southwest University of Political Science and Law.
