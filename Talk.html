@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talks - Lei Niu</title>
     <style>
-        /* 全局样式 (与主页保持一致) */
+        /* 全局样式 */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -15,81 +15,40 @@
             padding: 20px;
         }
 
+        /* 居中单栏容器 */
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
             background: #fff;
-            padding: 30px;
+            padding: 40px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: flex; 
-            gap: 40px; 
             border-radius: 8px;
         }
 
-        /* 左侧边栏样式 */
-        .sidebar {
-            flex: 1; 
-            min-width: 250px;
-            text-align: left;
-            border-right: 1px solid #eee;
-            padding-right: 20px;
-        }
-        
-        .sidebar img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-            border: 2px solid #ddd;
-        }
-
-        .sidebar h1 {
-            font-size: 24px;
-            margin: 0 0 5px 0;
-            color: #2c3e50;
-        }
-        .sidebar h2 {
-            font-size: 16px;
-            color: #666;
-            margin: 0 0 15px 0;
-            font-weight: normal;
-        }
-        .sidebar p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-
-        .nav-links {
-            margin-top: 30px;
-            line-height: 2;
-        }
-        .nav-links a {
+        /* 返回主页链接样式 */
+        .back-link {
             text-decoration: none;
             color: #3498db;
             font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: 20px;
         }
-        .nav-links a:hover {
+        .back-link:hover {
             text-decoration: underline;
         }
 
-        /* 右侧正文区样式 */
-        .content {
-            flex: 2.5; 
-        }
-        
-        .content h3 {
+        /* 正文区样式 */
+        h3 {
             color: #2c3e50;
             border-bottom: 2px solid #ecf0f1;
             padding-bottom: 8px;
             margin-top: 0;
-            font-size: 26px;
+            font-size: 28px;
         }
 
-        /* 年份标题：居中、放大 */
-        .content h4 {
+        /* 年份标题 */
+        h4 {
             text-align: center;
             font-size: 24px;
             color: #2c3e50;
@@ -99,7 +58,7 @@
             border-radius: 4px;
         }
 
-        /* Talk列表样式：添加项目符号 */
+        /* Talk列表样式 */
         .pub-list {
             list-style-type: disc; 
             padding-left: 25px; 
@@ -126,15 +85,7 @@
         /* 手机端适配 */
         @media (max-width: 768px) {
             .container {
-                flex-direction: column;
                 padding: 20px;
-            }
-            .sidebar {
-                border-right: none;
-                border-bottom: 1px solid #eee;
-                padding-right: 0;
-                padding-bottom: 20px;
-                text-align: center;
             }
         }
     </style>
@@ -143,126 +94,94 @@
 
     <div class="container">
         
-        <!-- 左侧导航栏 -->
-        <div class="sidebar">
-            <img src="Foto.jpg" alt="Profile Photo">
+        <!-- 返回主页按钮 -->
+        <a href="index.html" class="back-link">← Back to Home</a>
             
-            <h1>Lei Niu</h1>
-            <h2>Postdoctoral Fellow</h2>
-            <p>Lingnan University, Hong Kong Catastrophic Risk Centre (HKCRC)</p>
-            <p>📍 China, Hongkong</p>
+        <h3>Talks & Presentations</h3>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="mailto:leiniu@ln.edu.hk">leiniu@ln.edu.hk</a>
-                <a href="research.html">Research</a>
-                <a href="talks.html">Talks</a>
-                <a href="#">CV (PDF)</a>
-            </div>
-        </div>
+        <h4>2026</h4>
+        <ul class="pub-list">
+            <li>
+                <div class="pub-title">“Paternalistic Rational Persuasion”</div>
+                <div class="pub-venue">ECNU-CONCEPT workshop, University of Cologne, Germany, 23.04.2026.</div>
+            </li>
+            <li>
+                <div class="pub-title">“The Epistemology of Paternalism”</div>
+                <div class="pub-venue">Young Scholars Forum, Beijing Normal University, China, 26.01.2026 (Online).</div>
+            </li>
+        </ul>
 
-        <!-- 右侧主要内容区 -->
-        <div class="content">
-            
-            <h3>Talks & Presentations</h3>
+        <h4>2025</h4>
+        <ul class="pub-list">
+            <li>
+                <div class="pub-title">“Political Epistemic Paternalism: Beyond Trust and Control”</div>
+                <div class="pub-venue">Epistemic Democracy and Digital Technologies: Legitimacy, Knowledge, and Justice in Contemporary Democracies, University of Rijeka, Croatia, 19.06.2025.</div>
+            </li>
+        </ul>
 
-            <h4>2026</h4>
-            <ul class="pub-list">
-                <li>
-                    <div class="pub-title">“Paternalistic Rational Persuasion”</div>
-                    <div class="pub-venue">ECNU-CONCEPT workshop, University of Cologne, Germany, 23.04.2026.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“The Epistemology of Paternalism”</div>
-                    <div class="pub-venue">Young Scholars Forum, Beijing Normal University, China, 26.01.2026 (Online).</div>
-                </li>
-            </ul>
+        <h4>2024</h4>
+        <ul class="pub-list">
+            <li>
+                <div class="pub-title">“Group Believers: Interpretationism and Fictionalism”</div>
+                <div class="pub-venue">Interpretivism, Mental Fictionalism and Folk Psychology, University of Tartu, Estonia, 08.11.2024.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Epistemic indifference and Epistemic Tolerance”</div>
+                <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 23.10.2024.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Epistemic Paternalism: A Strong Claim in Consequentialist Perspective”</div>
+                <div class="pub-venue">Workshop on Applied Philosophy of Wellbeing (APW), Australian National University, Australia, 23.08.2024 (Online).</div>
+            </li>
+            <li>
+                <div class="pub-title">“Group Believers: The Argument from Group Persuasion”</div>
+                <div class="pub-venue">The 3rd International Workshop on Logic and Philosophy: Agency and Intentionality: Collective and Individual, Tsinghua University, China, 25.05.2024.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Science Communication and Epistemic Indifference”</div>
+                <div class="pub-venue">Knowledge, Science and Society, University of California, San Diego, United States, 11.05.2024.</div>
+            </li>
+            <li>
+                <div class="pub-title">“How Will AI Rule the World?”</div>
+                <div class="pub-venue">Will Machines Rule the World? The Karel Čapek Center for Values in Science and Technology, Czech Academy of Sciences, Czech Republic, 11.03.2024.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Epistemic Indifference: The Rational Attitudes toward Others’ Beliefs”</div>
+                <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 31.01.2024.</div>
+            </li>
+        </ul>
 
-            <h4>2025</h4>
-            <ul class="pub-list">
-                <li>
-                    <div class="pub-title">“Political Epistemic Paternalism: Beyond Trust and Control”</div>
-                    <div class="pub-venue">Epistemic Democracy and Digital Technologies: Legitimacy, Knowledge, and Justice in Contemporary Democracies, University of Rijeka, Croatia, 19.06.2025.</div>
-                </li>
-            </ul>
-
-            <h4>2024</h4>
-            <ul class="pub-list">
-                <li>
-                    <div class="pub-title">“Group Believers: Interpretationism and Fictionalism”</div>
-                    <div class="pub-venue">Interpretivism, Mental Fictionalism and Folk Psychology, University of Tartu, Estonia, 08.11.2024.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Epistemic indifference and Epistemic Tolerance”</div>
-                    <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 23.10.2024.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Epistemic Paternalism: A Strong Claim in Consequentialist Perspective”</div>
-                    <div class="pub-venue">Workshop on Applied Philosophy of Wellbeing (APW), Australian National University, Australia, 23.08.2024 (Online).</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Group Believers: The Argument from Group Persuasion”</div>
-                    <div class="pub-venue">The 3rd International Workshop on Logic and Philosophy: Agency and Intentionality: Collective and Individual, Tsinghua University, China, 25.05.2024.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Science Communication and Epistemic Indifference”</div>
-                    <div class="pub-venue">Knowledge, Science and Society, University of California, San Diego, United States, 11.05.2024.</div>
-                </li>
-                <li>
-                    <div class="pub-title">Commentary on Dan Hicks and Emilio Lobato, “Developing a Values in Science Scale (VISS)”</div>
-                    <div class="pub-venue">Knowledge, Science and Society, University of California, San Diego, United States, 11.05.2024.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“How Will AI Rule the World?”</div>
-                    <div class="pub-venue">Will Machines Rule the World? The Karel Čapek Center for Values in Science and Technology, Czech Academy of Sciences, Czech Republic, 11.03.2024.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Epistemic Indifference: The Rational Attitudes toward Others’ Beliefs”</div>
-                    <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 31.01.2024.</div>
-                </li>
-            </ul>
-
-            <h4>2023</h4>
-            <ul class="pub-list">
-                <li>
-                    <div class="pub-title">“Political Epistemic Paternalism”</div>
-                    <div class="pub-venue">Erasmus Mundus social Epistemology winter consortium meeting and PhD Symposium, University of Barcelona, Spain, 11.12.2023.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Facing AI: The Epistemological and Political Dimension of Trust”</div>
-                    <div class="pub-venue">Science and Art of Simulation 2023: Reliability or Trustworthiness? High Performance Computing Center, University of Stuttgart, Germany, 30.11.2023.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“What is Wrong with Mill’s Tolerant Attitude?”</div>
-                    <div class="pub-venue">International Conference: John Stuart Mill and the Positive Philosophy of the 19th Century On the 150th anniversary of Mill's death, the Institute of Philosophy and Psychology of the Romanian Academy, Romanian, 19.10.2023 (Online).</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Epistemic Paternalism in the Digital Age”</div>
-                    <div class="pub-venue">Politics of Technologies in the Digital Age: Philosophical and Interdisciplinary Perspectives, University of Ioannina, Greece, 12.10.2023.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Group Persuasion and Social Ontology”</div>
-                    <div class="pub-venue">Social Ontology 2023, Stockholm University, Sweden, 18.08.2023.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“The Motivation for Epistemic Paternalism”</div>
-                    <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 05.07.2023.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Why is an Intervention Epistemically Paternalistic”</div>
-                    <div class="pub-venue">The International Conference on Computer Ethics: Philosophical Enquiry (CEPE 2023), Illinois Institute of Technology, United States, 25.05.2023 (Online).</div>
-                </li>
-                <li>
-                    <div class="pub-title">Commentary on Ram Neta: “Rationally Determinable Conditions”</div>
-                    <div class="pub-venue">Epistemology Research Colloquium, University of Cologne, Germany, 24.04.2023.</div>
-                </li>
-                <li>
-                    <div class="pub-title">“Two Challenges of Epistemic Paternalism”</div>
-                    <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 04.01.2023.</div>
-                </li>
-            </ul>
-
-        </div>
+        <h4>2023</h4>
+        <ul class="pub-list">
+            <li>
+                <div class="pub-title">“Political Epistemic Paternalism”</div>
+                <div class="pub-venue">Erasmus Mundus social Epistemology winter consortium meeting and PhD Symposium, University of Barcelona, Spain, 11.12.2023.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Facing AI: The Epistemological and Political Dimension of Trust”</div>
+                <div class="pub-venue">Science and Art of Simulation 2023: Reliability or Trustworthiness? High Performance Computing Center, University of Stuttgart, Germany, 30.11.2023.</div>
+            </li>
+            <li>
+                <div class="pub-title">“What is Wrong with Mill’s Tolerant Attitude?”</div>
+                <div class="pub-venue">International Conference: John Stuart Mill and the Positive Philosophy of the 19th Century On the 150th anniversary of Mill's death, the Institute of Philosophy and Psychology of the Romanian Academy, Romanian, 19.10.2023 (Online).</div>
+            </li>
+            <li>
+                <div class="pub-title">“Epistemic Paternalism in the Digital Age”</div>
+                <div class="pub-venue">Politics of Technologies in the Digital Age: Philosophical and Interdisciplinary Perspectives, University of Ioannina, Greece, 12.10.2023.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Group Persuasion and Social Ontology”</div>
+                <div class="pub-venue">Social Ontology 2023, Stockholm University, Sweden, 18.08.2023.</div>
+            </li>
+            <li>
+                <div class="pub-title">“Why is an Intervention Epistemically Paternalistic”</div>
+                <div class="pub-venue">The International Conference on Computer Ethics: Philosophical Enquiry (CEPE 2023), Illinois Institute of Technology, United States, 25.05.2023 (Online).</div>
+            </li>
+            <li>
+                <div class="pub-title">“Two Challenges of Epistemic Paternalism”</div>
+                <div class="pub-venue">Brown Bag Seminar Series, University of Cologne, Germany, 04.01.2023.</div>
+            </li>
+        </ul>
 
     </div>
 
